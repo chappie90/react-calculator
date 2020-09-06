@@ -1,0 +1,51 @@
+/* Reset */
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: inherit;
+}
+
+ol, 
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Variables */
+:root {
+  /* Colors */
+  --color-primary-orange: #FF8C00;
+  --color-primary-orange-dark: #cc7000;
+  --color-grey-dark: #171717;
+  --color-grey-medium: #D3D3D3;
+  --color-grey: #B0B0B0;
+  --color-grey-light: #F5F5F5;
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* Font sizes */
+  --heading-large: 80px;
+  --heading-big: 40px;
+  --heading-medium: 32px;
+}
+
+/* Styles */
+::selection {
+  background-color: var(--color-primary-orange-dark);
+}

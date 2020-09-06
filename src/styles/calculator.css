@@ -1,0 +1,31 @@
+.calculator {
+  background: var(--color-white);
+  width: 100%;
+  max-width: 600px;
+}
+
+.display-wrapper {
+  display: flex;
+}
+
+.delete-key {
+  display: inline-block;
+  font-size: var(--heading-medium);
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: var(--color-grey-medium);
+}
+
+.delete-key:active {
+  background-color: var(--color-grey);
+}
+
+@media screen and (min-width: 600px) {
+  .delete-key {
+    font-size: var(--heading-big);
+    width: 150px;
+  }
+}

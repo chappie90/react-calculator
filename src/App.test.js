@@ -1,9 +1,19 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import { shallow } from 'enzyme';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+import App from './App';
+import Calculator from './components/Calculator';
+
+describe('App', () => {
+  let wrapper;
+
+  beforeEach(() => wrapper = shallow(<App />));
+
+  it('should render a <div />', () => {
+    expect(wrapper.find('div').length).toEqual(1);
+  });
+
+  it('should render the Calculator Component', () => {
+    expect(wrapper.containsMatchingElement(<Calculator />)).toEqual(true);
+  });
 });

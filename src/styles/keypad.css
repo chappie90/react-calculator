@@ -1,0 +1,19 @@
+.keypad .list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 10px;
+}
+
+.keypad .item {
+  flex: 1 0 25%;
+  font-size: var(--heading-medium);
+  text-align: center;
+  padding: 6px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .keypad .item {
+    font-size: var(--heading-big);
+  }
+}
