@@ -8,7 +8,11 @@ Clone Github repo - `git clone git@github.com:chappie90/react-calculator.git`
 
 Go inside project root directory - `cd react-calculator`
 
+Install dependencies - `npm install`
+
 To run app locally - `npm start`
+
+App is available at http://localhost:3000/
 
 To launch test runner - `npm test`
 
