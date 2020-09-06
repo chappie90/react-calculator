@@ -12,4 +12,8 @@ To run app locally - `npm start`
 
 To launch test runner - `npm test`
 
+## Live Demo
+  
+  https://stoyan-react-calculator.netlify.app/
+
 ## Enjoy!
